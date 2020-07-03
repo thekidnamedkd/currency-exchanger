@@ -15,7 +15,7 @@ _Long description._
 | Program will display 'error' message with relevant info if API result is anything but 200 OK. | input: query | output: '400 Bad Request - Client Error' | [ X ] |
 | Program will take a USD value input from user. | input: 50 USD | output: 50 USD | [ X ] |
 | Program will convert USD input value to another currency with real-time exchange rate via API and display. | input: 50 USD | output: 44.50 EUR | [ ] |
-| Program will convert USD input value to at least 5 different currencies with real-time exchange rate via API and display based on selection. | input: 50 USD | output: 353.28 RMB | [ ] |
+| Program will convert USD input value to at least 5 different currencies with real-time exchange rate via API and display based on selection. | input: 50 USD | output: 353.28 RMB | [ X ] |
 | Program will save multiple exchange rates to the session storage for reuse. | input: N/A | output: N/A | [ ] |
 
 

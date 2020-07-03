@@ -8,6 +8,8 @@ $(document).ready(function () {
   $("form#exchange").submit(function(event) {
     event.preventDefault();
     let cashIn = $("#usdInput").val();
+    let curSelect = $("#inputCur").val();
+    
   
     (async () => {
       let exchangeService = new ExchangeService();
@@ -17,7 +19,6 @@ $(document).ready(function () {
   
     function getElements(response) {
       console.log(cashIn)
-      co
       if (response) {
         $('#exchanged').append("in AED: " + (cashIn*response.conversion_rates.AED) + "<br>");
         $('#exchanged').append("in ARS: " + (cashIn*response.conversion_rates.ARS) + "<br>");
