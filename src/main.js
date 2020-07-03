@@ -7,7 +7,8 @@ import { ExchangeService } from './currency-exchanger-service';
 $(document).ready(function () {
   $("form#exchange").submit(function(event) {
     event.preventDefault();
-
+    let cashIn = $("#usdInput").val();
+  
     (async () => {
       let exchangeService = new ExchangeService();
       const response = await exchangeService.getExchangeRates();
@@ -15,9 +16,10 @@ $(document).ready(function () {
     })();
   
     function getElements(response) {
+      console.log(cashIn)
       if (response) {
-        $('#exchanged').text("in USD: $" + response.conversion_rates.USD);
-        console.log(response.conversion_rates)
+        $('#exchanged').text("in USD: $" + (cashIn*response.conversion_rates.USD));
+        console.log(response.conversion_rates);
       } else {
         $('#exchanged').text("Client Error - please check API key.");
       }
