@@ -14,9 +14,9 @@ $(document).ready(function () {
       getElements(response);
     })();
   
-    function getElements(responseParam) {
-      if (responseParam) {
-        $('#exchanged').text("in USD: $" + responseParam.conversion_rates);
+    function getElements(response) {
+      if (response) {
+        $('#exchanged').text("in USD: $" + response.conversion_rates[0]);
       } else {
         $('#exchanged').text("Client Error - please check API key.");
       }
