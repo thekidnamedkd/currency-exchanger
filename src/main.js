@@ -17,6 +17,7 @@ $(document).ready(function () {
   
     function getElements(response) {
       console.log(cashIn)
+      co
       if (response) {
         $('#exchanged').append("in AED: " + (cashIn*response.conversion_rates.AED) + "<br>");
         $('#exchanged').append("in ARS: " + (cashIn*response.conversion_rates.ARS) + "<br>");
