@@ -21,15 +21,15 @@ _Long description._
 
 ## Setup/Installation Requirements
 
-* _Visit the following link: _
+* _Visit the following link: https://github.com/thekidnamedkd/currency-exchanger
 * _Clone the repository to your desired directory._
 * _OR_
-* _Visit here: _
+* _Visit here: [coming soon]_
 
 
 ## Known Bugs
 
-_ _
+* _Results print twice to the DOM._
 
 ## Support and contact details
 
