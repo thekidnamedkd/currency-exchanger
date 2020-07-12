@@ -25,6 +25,11 @@ body {
   margin-bottom: 10px;
 }
 
+#inputCur {
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
 #exchanged {
   margin-top: 50px;
   text-align: center;
