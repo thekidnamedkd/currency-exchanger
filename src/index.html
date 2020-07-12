@@ -8,10 +8,10 @@
 <body>
   <div class="container">
     <h1>US Currency Exchange</h1>
-    <h3>Please enter a cash value.</h3>
+    <h3>Please enter a USD cash value.</h3>
     <form id="exchange">
       <label for="usdInput">Dollar Amount:</label>
-      <input id="usdInput" class="form-control" type="number" min=".01" step="any" required>
+      <input id="usdInput" class="form-control" type="number" min=".0001" step=".0001" required>
       <label>Choose Country:</label>
       <input list="currency" name="currency" type="text" id="inputCur" required>
       <datalist id="currency">

@@ -10,20 +10,24 @@ $(document).ready(function () {
     let cashIn = $("#usdInput").val();
     let curSelect = $("#inputCur").val();
     
-  
     (async () => {
       let exchangeService = new ExchangeService();
       const response = await exchangeService.getExchangeRates();
       getElements(response);
+      errorCurrency(response);
     })();
   
     function getElements(response) {
       if (response) {
-        let exchangeOut = ("in " + curSelect + ": " + (cashIn*response.conversion_rates[curSelect]) + "<br>")
+        let exchangeOut = (`Your USD amount in ${curSelect} is ${(cashIn * response.conversion_rates[curSelect]).toFixed(4)}<br>`);
         $('#exchanged').html(exchangeOut);
       } else {
         $('#exchanged').text("Client Error - please check API key.");
       }
+    }
+    function errorCurrency(response) {
+      if (isNaN(response.conversion_rates[curSelect]) != false)
+        $('#exchanged').text("We do not recognize or support that currency at this time. Please choose from the list.");
     }
   });
 });
