@@ -8,10 +8,8 @@ export class ExchangeService {
       } else {
         jsonifiedResponse = false;
       }
-      console.log(jsonifiedResponse);
       return jsonifiedResponse;
     } catch(error) {
-      console.log(error);
       return false;
     }
   }
