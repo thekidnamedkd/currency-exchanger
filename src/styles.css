@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+
+body {
+  background-image: url(https://images.pexels.com/photos/1079034/pexels-photo-1079034.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: scroll;
+  position: relative; 
+  background-size: auto;
+  background-color: whitesmoke;
+
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container {
+  margin-top: 3%;
+  background-color: rgba(245, 245, 245, 0.541);
+  border-radius: 10px;
+  border: solid 2px black;
+  padding: 2%;
+}
+
+.form-control {
+  border: solid 1px black;
+  margin-bottom: 10px;
+}
+
+#exchanged {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 4em;
+}
